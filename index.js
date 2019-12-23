@@ -21,8 +21,8 @@ if (environment !== 'production') {
 
 app.use('/api/v1', routes(router));
 
-app.listen(`${stage.port}`, () => {
-  console.log(`Server now listening at localhost:${stage.port}`);
+app.listen(8000, () => {
+  console.log(`Server now listening at localhost:8000`);
 });
 
 module.exports = app;
